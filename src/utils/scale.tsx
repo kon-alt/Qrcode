@@ -1,6 +1,7 @@
 import {Dimensions} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
+// @ts-ignore
 const [shortDimension, longDimension] = width < height ? [width, height] : [height, width];
 
 export const guidelineBaseWidth = 350;
